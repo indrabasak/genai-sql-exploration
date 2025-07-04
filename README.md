@@ -1,6 +1,7 @@
 # GenAI SQL Exploration
 
-A TypeScript project demonstrating SQL database exploration using LangChain.js and Azure OpenAI. This project creates a conversational AI agent that can answer natural language questions about your MySQL database content.
+A TypeScript project demonstrating SQL database exploration using LangChain.js and Azure OpenAI. 
+This project creates a conversational AI agent that can answer natural language questions about your MySQL database content.
 
 ## 🚀 Features
 
@@ -92,7 +93,7 @@ const result2 = await util.execute(
 
 ### Core Components
 
-- **`SqlToolkitUtil`**: Main class that orchestrates the AI agent
+- **`AzureOpenAiSqlUtil`**: Main class that orchestrates the AI agent
   - Handles Azure OpenAI authentication
   - Manages database connections
   - Creates and executes the SQL agent
@@ -113,7 +114,7 @@ const result2 = await util.execute(
 ```
 langchain/
 ├── src/
-│   ├── sql-toolkit-util.ts    # Main SQL agent utility
+│   ├── azure-open-ai-sql-util.ts    # Main SQL agent utility
 │   └── test-mysql.ts          # MySQL connection test
 ├── dist/                      # Compiled JavaScript output
 ├── package.json              # Project dependencies
