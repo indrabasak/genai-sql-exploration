@@ -1,7 +1,7 @@
-import { AzureOpenAiSqlUtil } from '../tool/azure-open-ai-sql-util.js';
+import { BedrockSqlUtil } from '../tool/bedrock-sql-util.js';
 
 async function main() {
-  const util = new AzureOpenAiSqlUtil();
+  const util = new BedrockSqlUtil();
   await util.initialize();
   console.log('🤖 Starting Conversational SQL Agent Demo (Optimized Provider)\n');
 

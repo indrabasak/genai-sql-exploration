@@ -3,13 +3,14 @@ import { DataSource } from 'typeorm';
 import { SqlDatabase } from 'langchain/sql_db';
 import { createSqlAgent, SqlToolkit } from 'langchain/agents/toolkits/sql';
 import { AgentExecutor } from 'langchain/agents';
+import { BaseLanguageModel } from '@langchain/core/language_models/base';
 
 export abstract class AbstractSqLUtil {
-  private readonly model: ChatOpenAI;
+  private readonly model: BaseLanguageModel;
   private datasource!: DataSource;
   private executor!: AgentExecutor;
 
-  protected constructor(model: ChatOpenAI) {
+  protected constructor(model: BaseLanguageModel) {
     this.model = model;
   }
 
