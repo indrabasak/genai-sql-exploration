@@ -26,7 +26,7 @@ This project creates conversational AI agents that can answer natural language q
 
 **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/indrabasak/genai-sql-exploration.git
 cd genai-sql-exploration
 ```
 

@@ -5,6 +5,10 @@
   "description": "SQL Database Exploration using LangChain.js",
   "author": "Indra Basak",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indrabasak/genai-sql-exploration.git"
+  },
   "scripts": {
     "build": "rm -rf dist && tsc",
     "lint": "eslint src/**/*.ts",
